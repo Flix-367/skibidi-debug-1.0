@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "skibidi-debug",
+  "version": "${version}",
+  "name": "Skibidi Debug",
+  "description": "Skibidi debug addon for Meteor Client.",
+  "authors": ["Sam"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "dev.light.addon.SkibidiAddon"
+    ]
+  },
+  "mixins": [
+    "skibidi-debug.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft":    "~1.21.1",
+    "java":         ">=21",
+    "meteor-client": "*"
+  }
+}
