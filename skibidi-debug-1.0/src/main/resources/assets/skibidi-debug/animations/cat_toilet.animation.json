@@ -1,0 +1,49 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.cat_toilet.idle": {
+      "loop": true,
+      "animation_length": 2.0,
+      "bones": {
+        "tail": {
+          "rotation": {
+            "0.0": [
+              "-30 + Math.sin(query.anim_time * 180) * 20",
+              0,
+              0
+            ],
+            "1.0": [
+              "-30 - Math.sin(query.anim_time * 180) * 20",
+              0,
+              0
+            ],
+            "2.0": [
+              "-30 + Math.sin(query.anim_time * 180) * 20",
+              0,
+              0
+            ]
+          }
+        },
+        "cat_head": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.0": [
+              0,
+              "Math.sin(query.anim_time * 90) * 5",
+              0
+            ],
+            "2.0": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    }
+  }
+}
